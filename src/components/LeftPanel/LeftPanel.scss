@@ -1,0 +1,89 @@
+@import "../../index.css";
+@import "../../variables.scss";
+
+.panel_container {
+  // background-image: url("../../images/storm_troops_wider.png");
+  background-image: url("../../storm_troops_wider.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  opacity: 1;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+}
+
+.left_panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  height: 100vh;
+  background-color: $dark-blue-transparent;
+  @media (min-width: "700px") {
+    width: 19em;
+  }
+  @media (min-width: "900px") {
+    width: 22em;
+  }
+  @media (min-width: "1000px") {
+    width: 26.8em;
+  }
+}
+
+.panel_words {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  align-items: center;
+
+  .panel_quote {
+    @media (min-width: "700px") {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 2em;
+      padding: 0;
+      font-size: 0.7em;
+    }
+    @media (min-width: "900px") {
+      padding-bottom: 1em;
+      margin: 2em 5em;
+    }
+
+    p {
+      @media (min-width: "900px") {
+        padding-bottom: 1em;
+        margin: 0em 1em;
+      }
+
+      padding: 0.5em 0;
+      margin: 0;
+    }
+
+    hr {
+      align-self: center;
+      border: 1px solid $green-color;
+      width: 1em;
+      margin: 1em 1em 0.5em;
+    }
+
+    p:first-child {
+      @media (min-width:"320px") {
+        font-family: "PlayfairDisplay";
+        font-size: 2em;
+        font-weight: lighter;
+        padding: 0 1em;
+      }
+      @media (min-width: "700px") {
+        padding: 0;
+      }
+   
+    }
+
+    p:last-child {
+      font-size: 1.2em;
+      color: grey;
+    }
+  }
+}

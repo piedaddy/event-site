@@ -1,0 +1,22 @@
+/* @font-face {
+  font-family: 'Hind';
+  src: local('Hind'), url(./fonts/Hind-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: local('PlayfairDisplay'), url(./fonts/PlayfairDisplay-Regular.ttf) format('truetype');
+} */
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'Hind';
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+

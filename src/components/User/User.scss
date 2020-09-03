@@ -1,0 +1,88 @@
+@import "../../variables.scss";
+
+.user_profile {
+  width: 100vw;
+
+  &__banner {
+    @media (min-width: "320px") {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      box-shadow: $box-shadow;
+      margin: 4em 1em;
+      height: 11em;
+      position: relative;
+    }
+    @media (min-width: "700px") {
+      margin: 4em 6em;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+      display: flex;
+      background-color: $grey-button;
+      border-radius: 50%;
+      width: 8em;
+      height: 8em;
+      padding: 0.5em;
+      text-align: center;
+      justify-content: center;
+      margin-right: 0.9em;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      margin-top: -4em;
+
+      span {
+        color: $grey-text;
+        font-size: 3em;
+      }
+    }
+    .info {
+      margin-top: 2.5em;
+      p:first-child {
+        color: $dark-blue;
+        font-size: 1.1em;
+      }
+      p:last-child {
+        color: $grey-text;
+        font-size: 0.875em;
+      }
+    }
+  }
+  &__events {
+    @media (min-width: "320px") {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 1em;
+    }
+
+    @media (min-width: "700px") {
+      margin: 0 6em;
+    }
+
+    span {
+      @media (min-width: "320px") {
+        color: $dark-blue;
+        letter-spacing: 0;
+        line-height: 2em;
+        font-weight: lighter;
+        font-family: Helvetica;
+        font-size: 1.4em;
+      }
+      @media (min-width: "320px") {
+        font-size: 1.8em;
+      }
+    }
+
+    .display_icons {
+      display: flex;
+    }
+  }
+}

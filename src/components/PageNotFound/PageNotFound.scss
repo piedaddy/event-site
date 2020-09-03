@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+
+.page_not_found {
+  display: flex;
+
+  .vader_svg {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    color: rgba(28, 66, 103, 0.171);
+    overflow: hidden;
+    z-index: -1;
+
+    svg {
+      @media (min-width: "320px") {
+        width: 15em;
+        height: auto;
+      }
+      @media (min-width: "700px") {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+
+  .pnf_error {
+    @media (min-width: "320px") {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
+    }
+    @media (min-width: "700px") {
+      text-align: left;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .pnf_button {
+      button {
+        background-color: $dark-blue;
+        color: white;
+        padding: 1.2em 1.2em;
+        margin-top: 2em;
+        border: none;
+        border-radius: 0.2em;
+        width: 15em;
+      }
+    }
+  }
+}

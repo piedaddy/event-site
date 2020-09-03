@@ -1,0 +1,85 @@
+@import "../../variables.scss";
+
+.homepage {
+  width: 100vw;
+  color: #928686;
+  position: relative;
+
+  .homepage_nav {
+    @media (min-width: "320px") {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 1em;
+    }
+    @media (min-width: "700px") {
+      margin: 0 4em;
+    }
+
+    button {
+      color: $filter-color-inactive;
+      font-weight: bold;
+      border: none;
+      text-decoration: none;
+      outline: none;
+      margin: 0.3em;
+      font-size: 0.75em;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      background-color: transparent;
+
+      &:focus,
+      &:active {
+        color: $dark-blue;
+        border: none;
+      }
+    }
+  }
+
+  .add_event_link {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    align-items: center;
+
+    .add_event_button {
+      @media (min-width: "320px") {
+        bottom: -4em;
+      }
+      @media (min-width: "700px") {
+        bottom: 1em;
+      }
+      border: none;
+      outline: none;
+      text-decoration: none;
+      background-color: $dark-blue;
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      align-self: left;
+      position: absolute;
+      right: 2em;
+      bottom: 0em;
+
+      p {
+        margin: 0;
+        font-size: 3em;
+        color: white;
+        font-weight: lighter;
+
+        // .#{$root}:hover {
+
+        // }
+      }
+    }
+  }
+}
+
+.display_icons {
+  display: flex;
+
+  .active {
+    svg {
+      color: $dark-blue;
+    }
+  }
+}

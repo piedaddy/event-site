@@ -1,0 +1,118 @@
+@import "../../variables.scss";
+
+.header {
+  position: absolute;
+  width: 100vw;
+
+  &__container {
+    @media (min-width: "320px") {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      height: 70vh;
+      margin-bottom: 1em;
+    }
+
+    @media (min-width: "700px") {
+      position: static;
+      height: auto;
+    }
+
+    span {
+      @media (min-width: "320px") {
+        color: $dark-blue;
+      }
+      @media (min-width: "700px") {
+        color: white;
+      }
+      font-size: 2.2em;
+      font-weight: bold;
+      padding: 0.6em 1.5em;
+      font-family: "Hind-Bold";
+      color: white;
+    }
+    p {
+      @media (min-width: "320px") {
+        font-size: 0.8em;
+        position: absolute;
+        bottom: 0;
+        right: 3.5em;
+        padding: 2em 2em;
+        color: $grey-color;
+        font-size: 0.875em;
+        line-height: 1.5em;
+        letter-spacing: 0;
+      }
+      @media (min-width: "700px") {
+        position: static;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $grey-text;
+    }
+  }
+}
+
+.homepage-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.5em 3em;
+  padding: 0.5em;
+  align-items: center;
+
+  p {
+    font-size: 2.2em;
+    padding: 0.2em 0.5em;
+    font-family: "Hind-Bold";
+    color: $dark-blue;
+  }
+  .homepage_header_right {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.5em;
+
+    .user-header {
+      display: flex;
+      align-items: center;
+
+      .username-circle {
+        display: flex;
+        background-color: $grey-button;
+        border-radius: 50%;
+        width: 2.3em;
+        height: 2.3em;
+        padding: 0.5em;
+        text-align: center;
+        justify-content: center;
+        margin-right: 0.9em;
+
+        span {
+          padding: 0;
+          align-self: center;
+          color: $grey-text;
+          font-size: 0.875em;
+        }
+      }
+
+      .username_name {
+        color: $grey-text;
+        line-height: 1.5em;
+        letter-spacing: 0;
+        font-size: 0.875em;
+        margin-right: 0.5em;
+      }
+    }
+    .header_menu {
+      align-self: flex-end;
+      padding-right: 0.5em;
+      color: $grey-text;
+      font-weight: bold;
+      font-size: 0.75em;
+      background-color: white;
+      padding: 0.4em;
+      border-radius: 0.6em;
+    }
+  }
+}

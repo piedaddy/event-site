@@ -1,0 +1,334 @@
+@import "../../variables.scss";
+
+.display_icons {
+  .grid_icon,
+  .list_icon {
+    width: 2em;
+  }
+  .grid_icon:active,
+  .list_icon:active {
+    color: $dark-blue;
+  }
+
+  svg {
+    margin-left: 1em;
+    color: $light-grey-color;
+  }
+  svg:hover {
+    fill: $dark-blue;
+    stroke: $dark-blue;
+  }
+}
+
+.future_events {
+  width: 100vw;
+  height: 100vh;
+}
+
+.event_list_rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.event_list_rows_container {
+  @media (min-width: "320px") {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+  }
+  @media (min-width: "700px") {
+    margin: 1em 0em;
+  }
+  @media (min-width: "1000px") {
+    margin: 1em 4em;
+  }
+
+  .event_list_rows {
+    @media (min-width: "320px") {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      background-color: white;
+      box-shadow: $box-shadow;
+      margin: 1em;
+      padding: 1em;
+      border-radius: 2px;
+    }
+    @media (min-width: "700px") {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .event_title {
+      width: 15em;
+      color: $dark-blue;
+      font-size: 1em;
+      line-height: 48px;
+    }
+
+    .event_description_rows {
+      width: 14em;
+      font-size: 0.9em;
+      color: #949ea8;
+      line-height: 24px;
+    }
+
+    .event_time {
+      width: 14em;
+      color: #cacdd0;
+      font-size: 0.9em;
+    }
+
+    .event_owner {
+      width: 7em;
+      color: #7d7878;
+      font-size: 0.875;
+      line-height: 24px;
+    }
+
+    .bottom-row {
+      @media (min-width: "320px") {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+      }
+
+      @media (min-width: "700px") {
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 20vw;
+      }
+
+      @media (min-width: "880px") {
+        flex-direction: row;
+      }
+    }
+
+    .event_capacity_rows {
+      font-size: 0.875;
+      letter-spacing: 0;
+      line-height: 1.5em;
+      color: #949ea8;
+      @media (min-width: "700px") {
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+.create_event {
+  width: 100vw;
+  height: 100vh;
+  background-color: $light-background;
+
+  .create_close {
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 0.8em;
+      font-weight: normal;
+      padding: 1em 0.7em;
+      color: $dark-blue;
+      line-height: 3em;
+      letter-spacing: 0;
+    }
+  }
+
+  .create_event_form_container {
+    display: flex;
+    justify-content: center;
+    .create_event_form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 32vw;
+      height: 70vh;
+      background-color: white;
+      padding: 3em;
+      box-shadow: $box-shadow;
+
+      .form_heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+
+        p {
+          color: $grey-text;
+        }
+        span {
+          color: $dark-blue;
+          font-weight: normal;
+          font-size: 1.5em;
+          line-height: 1.3em;
+          letter-spacing: 0;
+        }
+      }
+
+      form {
+        .inputs {
+          height: 3em;
+          margin-bottom: 1em;
+          color: $pink-color;
+        }
+
+        .input_error {
+          input {
+            border-bottom: 1px solid $pink-color;
+          }
+        }
+      }
+      input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $light-grey-color;
+        width: 26vw;
+        padding-bottom: 1em;
+        color: $dark-blue;
+        background-color: transparent;
+      }
+
+      ::placeholder {
+        color: $grey-color;
+        line-height: 2em;
+        font-size: 1.1em;
+      }
+
+      // input[name="startDate"] {
+      //   color: $grey-color;
+      // }
+
+      .add_event_button {
+        display: flex;
+        justify-content: center;
+
+        button {
+          border: none;
+          outline: none;
+          background-color: $green-color;
+          color: white;
+          padding: 1em;
+          border-radius: 0.2em;
+          width: 14em;
+          box-shadow: $box-shadow;
+        }
+      }
+    }
+  }
+}
+
+.event_list_container {
+  @media (min-width: "320px") {
+    height: 100%;
+  }
+  @media (min-width: "700px") {
+    height: 80vh;
+  }
+  .event_list_grid_container {
+    @media (min-width: "320px") {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1em 3em;
+    }
+    @media (min-width: "700px") {
+      flex-direction: row;
+      margin: 0em 0.5em;
+    }
+  }
+  .event_list {
+    @media (min-width: "320px") {
+      display: flex;
+      width: 90vw;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: white;
+      padding: 1.5em;
+      margin: 0.5em;
+      border-radius: 2px;
+      box-shadow: $box-shadow;
+    }
+    @media (min-width: "700px") {
+      width: 30vw;
+    }
+
+    @media (min-width: "1000px") {
+      width: 28vw;
+    }
+
+    .event_time {
+      color: $date-color;
+      font-size: 0.8em;
+      height: 2em;
+      @media (min-width: "700px") {
+        height: 3em;
+      }
+    }
+
+    .event_names {
+      @media (min-width: "320px") {
+        height: 4em;
+      }
+      @media (min-width: "700px") {
+        height: 6em;
+      }
+
+      h3 {
+        margin: 0;
+        color: $dark-blue;
+        font-weight: lighter;
+        @media (min-width: "700px") {
+          height: 4em;
+        }
+      }
+
+      .event_owner {
+        @media (min-width: "320px") {
+          font-size: 0.8em;
+          color: $owner-color;
+          height: 2em;
+        }
+        @media (min-width: "700px") {
+          height: 3em;
+        }
+      }
+    }
+
+    .event_description {
+      @media (min-width: "320px") {
+        font-size: 0.9em;
+        color: $grey-text;
+        height: 8em;
+      }
+      @media (min-width: "700px") {
+        height: 10em;
+      }
+      @media (min-width: "1000px") {
+        height: 8em;
+      }
+    }
+  }
+
+  .event_list_bottom-row {
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+
+    .event_capacity {
+      display: flex;
+      color: $grey-text;
+      font-size: 0.8em;
+      div {
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+.empty_past_event_message {
+  text-align: center;
+}

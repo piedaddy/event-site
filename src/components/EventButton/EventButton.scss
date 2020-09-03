@@ -1,0 +1,45 @@
+@import "../../variables.scss";
+
+.event_list_button__owner {
+  button {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    width: 7em;
+    border-radius: 0.3em;
+    background-color: #d9dce1;
+    color: $filter-color-inactive;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    line-height: 1em;
+  }
+}
+
+.event_list_button__join {
+  button {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    width: 7em;
+    border-radius: 0.3em;
+    background-color: $green-color;
+    color: white;
+    text-transform: uppercase;
+  }
+  button .blue {
+    background-color: blue;
+  }
+}
+
+.event_list_button__leave {
+  button {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    width: 7em;
+    border-radius: 0.3em;
+    background-color: $pink-color;
+    color: white;
+    text-transform: uppercase;
+  }
+}

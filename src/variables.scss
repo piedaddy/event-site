@@ -1,0 +1,29 @@
+$green-color: #22d486;
+$dark-blue: #323c46;
+$dark-blue-transparent: #323c46e1;
+$grey-color: #c9ced3;
+$date-color: #d8d8d8;
+$pink-color: #FF4081;
+$filter-color-inactive: #A9AEB4;
+$grey-button: #D9DCE1;
+$grey-text: #949EA8;
+$background: #d8d8d827;
+$light-background: rgba(216, 216, 216, 0.123);
+$login-label-color: #D2D6DA;
+$owner-color: #7D7878;
+$light-grey-color: rgba(201, 206, 211, 0.685);
+$box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+@font-face {
+  font-family: "Hind";
+  src: local("Hind"), url(./fonts/Hind-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Hind-Bold";
+  src: local("Hind-Bold"), url(./fonts/Hind-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay"),
+    url(./fonts/PlayfairDisplay-Regular.ttf) format("truetype");
+}
